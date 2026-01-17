@@ -1,0 +1,324 @@
+/* ========================================
+   Responsive Styles
+   ======================================== */
+
+/* ========================================
+   Tablet (768px ~ 1023px)
+   ======================================== */
+@media (max-width: 1023px) {
+  /* About Section */
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  /* Services Grid */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Portfolio Grid */
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact Section */
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+
+  .footer-nav ul {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+}
+
+/* ========================================
+   Mobile (~767px)
+   ======================================== */
+@media (max-width: 767px) {
+  /* Base */
+  :root {
+    --spacing-3xl: 4rem;
+    --spacing-2xl: 3rem;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  section {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+
+  /* Header */
+  .header-content {
+    padding: var(--spacing-sm) 0;
+  }
+
+  .logo a {
+    font-size: 1.25rem;
+  }
+
+  /* ナビゲーション - ハンバーガーメニュー */
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+  }
+
+  .nav.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 0;
+    padding: var(--spacing-md) 0;
+  }
+
+  .nav-link {
+    display: block;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-radius: 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .nav-link:hover {
+    background-color: var(--bg-gray);
+  }
+
+  /* ハンバーガーメニューアニメーション */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+  /* Hero Section */
+  .hero {
+    min-height: 80vh;
+    padding: var(--spacing-2xl) var(--spacing-md);
+    margin-top: 60px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  /* Section Titles */
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+  /* About Section */
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .info-table th {
+    width: 35%;
+    font-size: 0.875rem;
+  }
+
+  .info-table th,
+  .info-table td {
+    padding: var(--spacing-sm);
+  }
+
+  /* Services Section */
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .service-card {
+    padding: var(--spacing-lg);
+  }
+
+  .service-title {
+    font-size: 1.25rem;
+  }
+
+  /* Portfolio Section */
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .portfolio-image {
+    height: 180px;
+  }
+
+  .portfolio-content {
+    padding: var(--spacing-md);
+  }
+
+  .portfolio-title {
+    font-size: 1.125rem;
+  }
+
+  /* Contact Section */
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .contact-form {
+    padding: var(--spacing-lg);
+  }
+
+  .form-group {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .btn-large {
+    width: 100%;
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+
+  /* Footer */
+  .footer {
+    padding: var(--spacing-lg) 0 var(--spacing-sm) 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-md);
+  }
+
+  .footer-nav ul {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    align-items: center;
+  }
+
+  .footer-bottom {
+    font-size: 0.75rem;
+  }
+}
+
+/* ========================================
+   Small Mobile (~480px)
+   ======================================== */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .service-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .info-table th,
+  .info-table td {
+    font-size: 0.875rem;
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+}
+
+/* ========================================
+   Landscape Orientation (Mobile)
+   ======================================== */
+@media (max-height: 600px) and (orientation: landscape) {
+  .hero {
+    min-height: 100vh;
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .hero-description {
+    font-size: 0.875rem;
+    margin-bottom: var(--spacing-md);
+  }
+}
+
+/* ========================================
+   Print Styles
+   ======================================== */
+@media print {
+  .header,
+  .hamburger,
+  .hero,
+  .contact,
+  .footer {
+    display: none;
+  }
+
+  body {
+    font-size: 12pt;
+    color: #000;
+  }
+
+  section {
+    page-break-inside: avoid;
+    padding: 1rem 0;
+  }
+
+  .section-title {
+    color: #000;
+  }
+
+  a {
+    text-decoration: underline;
+    color: #000;
+  }
+}

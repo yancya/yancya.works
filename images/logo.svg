@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a365d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2b6cb0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- 背景円 -->
+  <circle cx="100" cy="100" r="95" fill="url(#logoGradient)" opacity="0.1"/>
+
+  <!-- Y の文字をデザイン化 -->
+  <g fill="url(#logoGradient)">
+    <!-- 左の線 -->
+    <path d="M 60 50 L 100 110 L 100 150" stroke="url(#logoGradient)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <!-- 右の線 -->
+    <path d="M 140 50 L 100 110" stroke="url(#logoGradient)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- 下部にテキスト -->
+  <text x="100" y="180" font-family="sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1a365d">
+    やんちゃワークス
+  </text>
+</svg>

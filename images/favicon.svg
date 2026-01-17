@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="faviconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a365d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2b6cb0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="32" height="32" rx="6" fill="url(#faviconGradient)"/>
+
+  <!-- Y の文字 -->
+  <g stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M 10 8 L 16 18 L 16 24"/>
+    <path d="M 22 8 L 16 18"/>
+  </g>
+</svg>
