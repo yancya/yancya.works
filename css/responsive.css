@@ -229,10 +229,18 @@
     gap: var(--spacing-md);
   }
 
+  .footer-nav {
+    width: 100%;
+  }
+
   .footer-nav ul {
     flex-direction: column;
     gap: var(--spacing-xs);
-    align-items: center;
+    align-items: stretch;
+  }
+
+  .footer-nav li {
+    text-align: center;
   }
 
   .footer-bottom {
