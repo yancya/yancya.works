@@ -1,0 +1,7 @@
+<svg width="400" height="80" viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="80" fill="none"/>
+  <path d="M20 20 L35 20 L45 40 L35 60 L20 60 Z" fill="#ed8936" />
+  <text x="60" y="55" font-family="Arial, sans-serif" font-weight="bold" font-size="32" fill="#1a365d">
+    yancya.works
+  </text>
+</svg>

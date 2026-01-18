@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh repo view:*)",
+      "Bash(curl:*)",
+      "Bash(dig:*)",
+      "Bash(nslookup yancya.works)",
+      "WebFetch(domain:yancya.house)",
+      "Bash(convert:*)",
+      "Bash(magick:*)",
+      "Bash(ls:*)"
+    ]
+  }
+}
